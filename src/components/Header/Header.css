@@ -1,0 +1,115 @@
+/* Burger Menu Icon */
+.burger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.burger-menu.open {
+  display: block;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  position: relative;
+  margin-left: 645px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Navigation Styles */
+.list {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 16px;
+  color: #3d3d3d;
+  font-weight: 400;
+  padding-bottom: 27px;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  font-weight: 700;
+  border-bottom: 3px solid #46a358;
+}
+
+/* Burger Menu on smaller screens */
+@media (max-width: 850px) {
+  .list {
+    display: none; /* Hide the navigation links on small screens */
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .burger-menu.open {
+    display: block;
+  }
+
+  .modal.open {
+    display: flex; /* Show modal when burger menu is clicked */
+  }
+
+  nav ul.open {
+    display: block; /* Show the navigation links when modal is open */
+  }
+}
+
+/* Search input styling */
+.search-input {
+  border-radius: 15px;
+  padding-left: 25px;
+  border: 1px solid rgba(70, 163, 88, 0.5);
+  color: rgba(70, 163, 88, 0.5);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.modal-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #3d3d3d;
+  display: block;
+  padding: 10px 0;
+  font-weight: 400;
+}
+
+.modal-link:hover {
+  color: #46a358;
+}

@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "FONTSPRING DEMO - Cera Pro";
+  src: url("./font/FONTSPRINGDEMO-CeraProMediumRegular.woff2") format("woff2"),
+    url("./font/FONTSPRINGDEMO-CeraProMediumRegular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Cera Pro";
+  src: url("./font/FONTSPRINGDEMO-CeraProBlackRegular.woff2") format("woff2"),
+    url("./font/FONTSPRINGDEMO-CeraProBlackRegular.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Cera Pro";
+  src: url("./font/FONTSPRINGDEMO-CeraProRegular.woff2") format("woff2"),
+    url("./font/FONTSPRINGDEMO-CeraProRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Cera Pro";
+  src: url("./font/FONTSPRINGDEMO-CeraProBold.woff2") format("woff2"),
+    url("./font/FONTSPRINGDEMO-CeraProBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .box {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+}
+/* Modal */
