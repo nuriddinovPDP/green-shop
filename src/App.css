@@ -47,4 +47,9 @@
     padding-bottom: 50px;
   }
 }
-/* Modal */
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertikal markazlash */
+  width: 100%; /* Konteynerning kengligini belgilaydi */
+}
