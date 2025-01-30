@@ -8,6 +8,8 @@ export default function CardItem() {
   return (
     <li className="bg-[#fff] flex items-center max-w-[782px] justify-between pr-[31px]">
       <div className="flex items-center gap-[14px]">
+
+
         <img src={img} width={70} height={70} alt="" />
         <div className="flex flex-col">
           <p>Barberton Daisy</p>

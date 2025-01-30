@@ -51,12 +51,15 @@ export default function CartTotals() {
         <p className="text-[16px] font-[700] font-cera text-[#3D3D3D]">Total</p>
         <p className="text-[18px] font-[700] text-[#46A358]">$2,699.00</p>
       </div>
-      <button className="w-full bg-[#46A358] text-[#fff] text-[15px] font-[700] font-cera mt-[29px] pt-[12px] pb-[12px] rounded-[3px]">
+      <button className="w-full bg-[#46A358] text-[#fff] text-[15px] font-[700] font-cera mt-[29px] pt-[12px] pb-[12px] rounded-[3px] mb-[14px]">
         Proceed To Checkout
       </button>
-      <p className="text-[15px] font-[400] font-cera text-[#46A358] mt-[14px] text-center">
+      <NavLink
+        to={"/shop/checkout"}
+        className={"text-[15px] font-[400] font-cera text-[#46A358] mt-[14px]]"}
+      >
         Continue Shopping
-      </p>
+      </NavLink>
     </div>
   );
 }

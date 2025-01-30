@@ -15,6 +15,7 @@ import SingleDesc from "./components/SingleDesc/SingleDesc";
 import SingleRew from "./components/SingleRew/SingleRew.";
 import Korzink from "./pages/Karzinka/Korzink";
 import { API } from "./util/config";
+import CheckOut from "./pages/CheckOut/CheckOut";
 
 function App() {
   const getAllFlowers = async () => {
@@ -71,6 +72,10 @@ function App() {
           element: <Navigate to="description" replace />,
         },
       ],
+    },
+    {
+      path: "/shop/checkout",
+      element: <CheckOut />,
     },
   ]);
   return (
