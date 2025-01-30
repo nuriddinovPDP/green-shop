@@ -10,7 +10,7 @@ export default function Carousel() {
             <p className="text-[17px] text-[#3D3D3D] font-[500] font-cera mb-[7px]">
               Welcome to GreenShop
             </p>
-            <h2 className="text-[70px] font-cera font-[900] text-[#3D3D3D]">
+            <h2 className="text-[70px] font-sans font-[900] text-[#3D3D3D]">
               Let’s Make a Better{" "}
               <span className="text-[#46A358] mb-[10px]"> Planet</span>
             </h2>
