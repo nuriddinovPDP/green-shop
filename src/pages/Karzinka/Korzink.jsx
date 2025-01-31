@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 import CardProducts from "../../components/CardProducts/CardProducts";
 import CartTotals from "../../components/CartTotals/CartTotals";
 import Item from "../../components/Item/Item";
@@ -8,6 +8,7 @@ import Info from "../../components/Info/Info";
 import Footer from "../../components/Footer/Footer";
 
 export default function Korzink() {
+  const data = useLoaderData();
   return (
     <>
       <Header />
@@ -57,7 +58,9 @@ export default function Korzink() {
               </p>
             </div>
             <ul>
-              <Item />
+              {data?.map((el) => (
+                <Item data={el} />
+              ))}
             </ul>
           </div>
         </div>

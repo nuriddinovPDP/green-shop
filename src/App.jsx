@@ -45,6 +45,7 @@ function App() {
     {
       path: "/shop",
       element: <Korzink />,
+      loader: getAllFlowers,
     },
     {
       path: "/care",

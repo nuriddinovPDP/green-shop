@@ -22,8 +22,8 @@ export default function Header() {
           <div className="burger-menu" onClick={toggleMenu}>
             <span className="text-[30px]">☰</span>
           </div>
-          <div className={`list flex items-center`}>
-            <ul className={`flex content-center items-center gap-[50px]  `}>
+          <div className="flex items-center gap-[200px] justify-between">
+            <ul className={`flex items-center gap-[50px] w-[355px]`}>
               <li>
                 <NavLink
                   to="/"
@@ -82,7 +82,7 @@ export default function Header() {
               </li>
             </ul>
 
-            <div className="flex items-center gap-[30px]">
+            <div className="flex items-center gap-[30px] w-[210px]">
               {isInp ? (
                 <input
                   name="search"
